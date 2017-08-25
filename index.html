@@ -13,13 +13,10 @@
 	
 	<script src="jquery.mobile-1.4.5.min.js"></script>
 	<script>
-	$(document).ready(function(e) {
-         $(document).on('focus', 'input, textarea, select', function() {
-          $(this).on("blur", function(){
-           window.scrollTo(0,0);
-          });
-                });
-      });
+	$(document).ready(function(){
+		var footer = $(".footer");
+footer.css({ "top": "10px", "bottom": "auto"});
+	});
 	</script>
 </head>
 
