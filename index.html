@@ -9,13 +9,18 @@
 	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
 	
 	
+	<style>
+	[data-role=page]{height: 100% !important; position:relative !important;}
+[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;} 
+	</style>
+	
+	
 	<script src="jquery.js"></script>
 	
 	<script src="jquery.mobile-1.4.5.min.js"></script>
 	<script>
 	$(document).ready(function(){
-		var footer = $(".footer");
-footer.css({ "top": "10px", "bottom": "auto"});
+
 	});
 	</script>
 </head>
@@ -35,7 +40,7 @@ footer.css({ "top": "10px", "bottom": "auto"});
 		
 	</div><!-- /content -->
 
-	<div data-role="footer" data-position="fixed" data-hide-during-focus="">
+	<div data-role="footer" data-position="fixed">
 		<h4>Footer content</h4>
 	</div><!-- /footer -->
 
